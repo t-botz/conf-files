@@ -1,0 +1,12 @@
+[user]
+	name = Tibo
+	email = delor.thibault@gmail.com
+[push]
+	default = simple
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+
+
