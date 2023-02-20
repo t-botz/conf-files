@@ -26,5 +26,4 @@
 [pull]
     rebase = true
 [branch]
-    autosetupmerge = always
     autosetuprebase = always
