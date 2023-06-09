@@ -1,0 +1,7 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "shellcheck.customArgs": [
+        "-x"
+    ],
+    "editor.fontFamily": "FiraCode Nerd Font"
+}
