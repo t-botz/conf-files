@@ -1,0 +1,28 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = '$all$fill$cmd_duration $time$line_break$character'
+
+[time]
+disabled = false
+format = "[$time]($style)"
+style = "italic fg:240"
+
+[cmd_duration]
+show_milliseconds = true
+min_time = 100
+format = "~[$duration](yellow) "
+
+[fill]
+symbol = " "
+
+[aws]
+disabled = true
+
+[python]
+format = "via [${symbol}$virtualenv]($style)"
+
+[git_status]
+style = "bold purple"
+
+[git_metrics]
+disabled = false
