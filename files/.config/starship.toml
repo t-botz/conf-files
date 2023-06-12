@@ -5,12 +5,12 @@ format = '$all$fill$cmd_duration $time$line_break$character'
 [time]
 disabled = false
 format = "[$time]($style)"
-style = "italic fg:240"
+style = "fg:66"
 
 [cmd_duration]
 show_milliseconds = true
 min_time = 100
-format = "~[$duration](yellow) "
+format = "[$duration](fg:101) "
 
 [fill]
 symbol = " "
