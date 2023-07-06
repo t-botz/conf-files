@@ -12,7 +12,7 @@ sudo cp "$PROJ_DIR/ubuntu/release-upgrades" /etc/update-manager/release-upgrades
 log "Install Utilities from apt"
 sudo apt-get -y install \
     curl binutils git jq direnv shellcheck \
-    wget gpg unzip
+    wget gpg unzip build-essential
 
 log "Install Starship"
 curl -sS https://starship.rs/install.sh | sh -s - -f > /dev/null
