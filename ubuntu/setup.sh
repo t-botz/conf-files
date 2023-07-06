@@ -12,7 +12,15 @@ sudo cp "$PROJ_DIR/ubuntu/release-upgrades" /etc/update-manager/release-upgrades
 log "Install Utilities from apt"
 sudo apt-get -y install \
     curl binutils git jq direnv shellcheck \
-    wget gpg unzip build-essential
+    wget gpg unzip
+
+# https://devguide.python.org/getting-started/setup-building/#build-dependencies
+log "Install python3 build dependencies"
+sudo apt-get install -y build-essential gdb lcov pkg-config \
+    libbz2-dev libffi-dev libgdbm-dev libgdbm-compat-dev liblzma-dev \
+    libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev \
+    lzma lzma-dev tk-dev uuid-dev zlib1g-dev
+
 
 log "Install Starship"
 curl -sS https://starship.rs/install.sh | sh -s - -f > /dev/null
