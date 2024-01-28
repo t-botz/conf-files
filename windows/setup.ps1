@@ -65,3 +65,7 @@ Copy-File "windows\Microsoft.PowerShell_profile.ps1" "$HOME\Documents\PowerShell
 
 # Git config
 Copy-File "files\.gitconfig" "$HOME\.gitconfig"
+
+# Nerd Fonts
+Log "Installing FiraCode Font"
+.\windows\NerdFontInstaller\NerdFontInstaller.ps1 FiraCode
